@@ -1,36 +1,31 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Portalempregos
 
-## Getting Started
+O Portalempregos é um projeto desenvolvido para facilitar a conexão entre empresas e candidatos a emprego. Através de uma plataforma intuitiva, permitimos que as empresas postem vagas de emprego e os candidatos apliquem para elas, simplificando o processo de contratação e busca por trabalho.
 
-First, run the development server:
+## Como Utilizar
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Para utilizar o Portalempregos, siga os passos abaixo:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. **Cadastro**: Tanto empresas quanto candidatos devem se cadastrar no portal. O cadastro é simples e requer apenas informações básicas.
+2. **Postagem de Vagas**: Após o cadastro, as empresas podem postar vagas de emprego, detalhando requisitos, responsabilidades e benefícios.
+3. **Busca por Vagas**: Os candidatos podem buscar vagas utilizando filtros como localização, área de atuação e tipo de contrato.
+4. **Candidatura**: Encontrou uma vaga de interesse? Os candidatos podem se candidatar diretamente pelo portal, enviando seu currículo e demais informações solicitadas pela empresa.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Contribuindo
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Interessado em contribuir para o Portalempregos? Sua ajuda é muito bem-vinda! Aqui estão algumas maneiras de contribuir:
 
-## Learn More
+- **Reportando Bugs**: Encontrou um problema? Abra uma issue detalhando o bug encontrado.
+- **Sugestões de Melhorias**: Tem ideias de como podemos melhorar o Portalempregos? Abra uma issue com suas sugestões.
+- **Contribuindo com Código**: Quer contribuir diretamente com o código? Faça um fork do repositório, crie uma branch para sua feature ou correção e abra um Pull Request.
 
-To learn more about Next.js, take a look at the following resources:
+## FAQ
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+**Como posso alterar minhas informações de cadastro?**
+Para alterar suas informações, acesse a seção de perfil no portal e faça as alterações desejadas.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+**Esqueci minha senha, o que fazer?**
+Na página de login, clique em "Esqueci minha senha" e siga as instruções para redefini-la.
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+**Como posso entrar em contato com a empresa de uma vaga de interesse?**
+Após se candidatar para uma vaga, a empresa receberá suas informações e poderá entrar em contato com você. Certifique-se de manter suas informações de contato atualizadas.
