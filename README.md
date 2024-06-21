@@ -11,6 +11,63 @@ Para utilizar o Portalempregos, siga os passos abaixo:
 3. **Busca por Vagas**: Os candidatos podem buscar vagas utilizando filtros como localização, área de atuação e tipo de contrato.
 4. **Candidatura**: Encontrou uma vaga de interesse? Os candidatos podem se candidatar diretamente pelo portal, enviando seu currículo e demais informações solicitadas pela empresa.
 
+## Configurando e Utilizando o Prisma
+
+Para configurar o Prisma em seu projeto, siga os passos abaixo:
+
+1. Instale o Prisma e suas dependências:
+    ```bash
+    npm install @prisma/client
+    npm install prisma --save-dev
+    ```
+2. Inicialize o Prisma no seu projeto:
+    ```bash
+    npx prisma init
+    ```
+3. Configure o arquivo `.env` com a string de conexão do seu banco de dados.
+
+Após configurar o Prisma, você pode começar a utilizá-lo para realizar operações de banco de dados. Aqui estão alguns exemplos de operações CRUD:
+
+- **Criação**:
+    ```javascript
+    async function createUser(data) {
+      const newUser = await prisma.user.create({
+        data: {
+          email: data.email,
+          name: data.name,
+        },
+      });
+      return newUser;
+    }
+    ```
+- **Leitura**:
+    ```javascript
+    async function getUserById(id) {
+      const user = await prisma.user.findUnique({
+        where: { id: Number(id) },
+      });
+      return user;
+    }
+    ```
+- **Atualização**:
+    ```javascript
+    async function updateUser(id, data) {
+      const updatedUser = await prisma.user.update({
+        where: { id: Number(id) },
+        data: data,
+      });
+      return updatedUser;
+    }
+    ```
+- **Exclusão**:
+    ```javascript
+    async function deleteUser(id) {
+      await prisma.user.delete({
+        where: { id: Number(id) },
+      });
+    }
+    ```
+
 ## Contribuindo
 
 Interessado em contribuir para o Portalempregos? Sua ajuda é muito bem-vinda! Aqui estão algumas maneiras de contribuir:

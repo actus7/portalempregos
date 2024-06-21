@@ -1,15 +1,18 @@
 'use server';
 
-import {JobModel} from "@/models/Job";
-import mongoose from "mongoose";
-import {revalidatePath} from "next/cache";
+import { PrismaClient } from '@prisma/client';
+const prisma = new PrismaClient();
 
 export async function saveJobAction(formData: FormData) {
-  await mongoose.connect(process.env.MONGO_URI as string);
   const {id, ...jobData} = Object.fromEntries(formData);
   const jobDoc = (id)
-    ? await JobModel.findByIdAndUpdate(id, jobData)
-    : await JobModel.create( jobData );
+    ? await prisma.job.update({
+        where: { id: Number(id) },
+        data: jobData,
+      })
+    : await prisma.job.create({
+        data: jobData,
+      });
   if ('orgId' in jobData) {
     revalidatePath('/jobs/'+jobData?.orgId);
   }
