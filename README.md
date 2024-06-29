@@ -1,5 +1,7 @@
 # Portalempregos
 
+[English Version](README_EN.md) | [Versión en Español](README_ES.md)
+
 O Portalempregos é um projeto desenvolvido para facilitar a conexão entre empresas e candidatos a emprego. Através de uma plataforma intuitiva, permitimos que as empresas postem vagas de emprego e os candidatos apliquem para elas, simplificando o processo de contratação e busca por trabalho.
 
 ## Como Utilizar
